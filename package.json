@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "install-web": "cd ./web && yarn",
+    "install-api": "cd ./api && yarn",
+    "install-dep": "yarn install-web && yarn install-api",
+    
+    "web": "cd ./web && yarn dev",
+    "api": "cd ./api && yarn dev"
+  },
+  "name": "poke-app",
+  "version": "1.0.0",
+  "description": "Poke App built with React and node.",
+  "main": "index.js",
+  "author": "Gelacio Azael Fernandez Aldava",
+  "license": "MIT"
+}

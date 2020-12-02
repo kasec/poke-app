@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "name": "poke-api",
+  "version": "1.0.0",
+  "description": "and a api interface between web app and poke api",
+  "main": "index.js",
+  "author": "Gelacio Azael Fernandez Aldava",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pokedex-promise-v2": "^3.2.0"
+  }
+}
