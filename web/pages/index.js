@@ -21,10 +21,13 @@ export default function Home() {
   const changeListener = ev => setPokemonName(ev.target.value)
 
   const catchPokemonAction = (singlePokemon) => async () => {
+      if(!singlePokemon) {
+        alert("Fill the input field to search")
+        return
+      }
+
       const resolvedData = await fetch(`${GET_POKE_ENDPOINT}/${singlePokemon}`).then(res => res.json())
       
-      console.log("resolvedData", resolvedData);
-
       if(resolvedData.message) {
         alert(resolvedData.message)
       } else if(resolvedData.data) {
